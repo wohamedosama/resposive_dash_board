@@ -24,23 +24,30 @@ class CustomDrawer extends StatelessWidget {
           SliverToBoxAdapter(child: SizedBox(height: 8)),
           DrawerItemsListView(),
           SliverFillRemaining(
-              hasScrollBody: false,
-              child: Column(
-                children: [
-                  Expanded(child: SizedBox()),
-                  InActiveDrawerItem(
-                    drawerItemModel: DrawerItemModel(
-                        image: Assets.imagesSetting, title: 'Settings System'),
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                Expanded(
+                  child: SizedBox(height: 20),
+                ),
+                InActiveDrawerItem(
+                  drawerItemModel: DrawerItemModel(
+                    image: Assets.imagesSetting,
+                    title: 'Settings System',
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 48.0),
-                    child: InActiveDrawerItem(
-                      drawerItemModel: DrawerItemModel(
-                          image: Assets.imagesLogout, title: 'Logout Account'),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 48.0),
+                  child: InActiveDrawerItem(
+                    drawerItemModel: DrawerItemModel(
+                      image: Assets.imagesLogout,
+                      title: 'Logout Account',
                     ),
                   ),
-                ],
-              )),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
