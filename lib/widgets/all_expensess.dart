@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:resposive_dash_board/model/all_expensess_item_model.dart';
-import 'package:resposive_dash_board/utils/app_images.dart';
 import 'package:resposive_dash_board/widgets/all_expensess_header.dart';
-import 'package:resposive_dash_board/widgets/all_expensess_item.dart';
 import 'package:resposive_dash_board/widgets/all_expensess_items_list_view.dart';
 
 class AllExpenses extends StatelessWidget {
