@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:resposive_dash_board/model/all_expensess_item_model.dart';
 import 'package:resposive_dash_board/widgets/active_expensess_item.dart';
+import 'package:resposive_dash_board/widgets/in_active_expensess_item.dart';
 
 class AllExpensessItem extends StatelessWidget {
   const AllExpensessItem(
@@ -9,8 +10,8 @@ class AllExpensessItem extends StatelessWidget {
   final bool isSelected;
   @override
   Widget build(BuildContext context) {
-    return ActieExpensessItem(
-      itemModel: itemModel,
-    );
+    return isSelected
+        ? ActieExpensessItem(itemModel: itemModel)
+        : InActieExpensessItem(itemModel: itemModel);
   }
 }
