@@ -18,7 +18,7 @@ class AllExpensessItemHeader extends StatelessWidget {
           ),
           child: Center(child: SvgPicture.asset(image)),
         ),
-        Expanded(child: SizedBox()),
+        Spacer(),
         Transform.rotate(
           angle: 2 * 4.71238898,
           child: Icon(
