@@ -10,11 +10,12 @@ class CustomTextField extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
         hintText: hintText,
-        hintStyle: AppStyles.styleRegular16.copyWith(color: Color(0xFFA1A1A1)),
+        hintStyle:
+            AppStyles.styleRegular16.copyWith(color: const Color(0xFFA1A1A1)),
         border: buildBordar(),
         enabledBorder: buildBordar(),
         focusedBorder: buildBordar(),
-        fillColor: Color(0xFFFAFAFA),
+        fillColor: const Color(0xFFFAFAFA),
         filled: true,
       ),
     );
@@ -23,7 +24,7 @@ class CustomTextField extends StatelessWidget {
   OutlineInputBorder buildBordar() {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(
+      borderSide: const BorderSide(
         color: Color(0xFFFAFAFA),
       ),
     );

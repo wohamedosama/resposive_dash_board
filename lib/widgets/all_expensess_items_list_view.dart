@@ -12,7 +12,7 @@ class AllExpensessItemsListView extends StatefulWidget {
 }
 
 class _AllExpensessItemsListViewState extends State<AllExpensessItemsListView> {
-  final List items = [
+  final List items = const [
     AllExpensessItemModel(
         iamge: Assets.imagesBalance,
         title: 'Balance',
@@ -43,6 +43,7 @@ class _AllExpensessItemsListViewState extends State<AllExpensessItemsListView> {
             child: GestureDetector(
               onTap: () => updateIndex(index),
               child: Padding(
+                // ignore: prefer_const_constructors
                 padding: EdgeInsets.symmetric(horizontal: 12),
                 child: AllExpensessItem(
                   itemModel: items,

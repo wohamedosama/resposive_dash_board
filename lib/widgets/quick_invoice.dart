@@ -10,7 +10,7 @@ class QuickInvoice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomBackGroundContainer(
+    return const CustomBackGroundContainer(
       padding: 24,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

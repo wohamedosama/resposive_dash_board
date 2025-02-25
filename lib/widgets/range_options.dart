@@ -9,12 +9,11 @@ class RangeOptions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(12),
+      padding: const EdgeInsets.all(12),
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: RoundedRectangleBorder(
-          side: BorderSide(
-            width: 1.0,
+          side: const BorderSide(
             color: Color(0XFFF1F1F1),
           ),
           borderRadius: BorderRadius.circular(12),
@@ -22,14 +21,14 @@ class RangeOptions extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Text(
+          const Text(
             'Monthly',
             style: AppStyles.styleMedium16,
           ),
-          SizedBox(width: 18),
+          const SizedBox(width: 18),
           Transform.rotate(
             angle: 4.71238898,
-            child: Icon(
+            child: const Icon(
               Icons.arrow_back_ios_new_outlined,
               color: Color(0XFF064061),
             ),

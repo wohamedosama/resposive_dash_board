@@ -7,7 +7,7 @@ class LateastTransactions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text('Lateast Transactions', style: AppStyles.styleMedium16),
