@@ -23,6 +23,10 @@ class LateastTransactionListView extends StatelessWidget {
         title: 'Madrani Andi',
         image: Assets.imagesAvatar1,
         subTitle: 'Madraniadi20@gmail'),
+    UserInfoModel(
+        title: 'Josua Nunito',
+        image: Assets.imagesAvatar2,
+        subTitle: 'Josh Nunito@gmail.com'),
   ];
   @override
   Widget build(BuildContext context) {
