@@ -14,7 +14,7 @@ class InActieExpensessItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 20),
+      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: RoundedRectangleBorder(
@@ -27,7 +27,8 @@ class InActieExpensessItem extends StatelessWidget {
         children: [
           AllExpensessItemHeader(image: itemModel.iamge),
           SizedBox(height: 34),
-          Text(itemModel.title, style: AppStyles.styleMedium16),
+          FittedBox(
+              child: Text(itemModel.title, style: AppStyles.styleMedium16)),
           SizedBox(height: 8),
           Text(itemModel.date,
               style: AppStyles.styleRegular14, overflow: TextOverflow.ellipsis),

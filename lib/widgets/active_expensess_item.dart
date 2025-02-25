@@ -14,7 +14,7 @@ class ActieExpensessItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 20),
+      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
       decoration: ShapeDecoration(
         color: Color(0xff4EB7F2),
         shape: RoundedRectangleBorder(
