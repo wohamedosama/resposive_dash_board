@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:resposive_dash_board/utils/app_images.dart';
 import 'package:resposive_dash_board/utils/app_styles.dart';
+import 'package:resposive_dash_board/widgets/custom_dot_indicator.dart';
 
 class MyCards extends StatelessWidget {
   const MyCards({super.key});
@@ -50,7 +51,7 @@ class MyCards extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 26)
+            const SizedBox(height: 26),
           ],
         ),
       ),
