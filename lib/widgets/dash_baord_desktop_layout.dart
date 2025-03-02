@@ -21,9 +21,15 @@ class DashBaordDesktopLayout extends StatelessWidget {
         SizedBox(width: 32),
         Expanded(flex: 2, child: AllExpenseeAndQuickInvoiceSection()),
         SizedBox(width: 24),
-        //  Expanded(child: MyCardsAndTransactionHistorySection()),
-        Expanded(child: IncomeSection()),
-        //  Expanded(child: MyCardsSection()),
+        Expanded(
+            child: Column(
+          children: [
+            SizedBox(height: 40),
+            MyCardsAndTransactionHistorySection(),
+            SizedBox(height: 24),
+            Expanded(child: IncomeSection()),
+          ],
+        ))
       ],
     );
   }
