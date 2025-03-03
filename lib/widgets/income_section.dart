@@ -5,6 +5,7 @@ import 'package:resposive_dash_board/widgets/custom_backgorund_container.dart';
 import 'package:resposive_dash_board/widgets/income_chart.dart';
 import 'package:resposive_dash_board/widgets/income_details.dart';
 import 'package:resposive_dash_board/widgets/income_sction_header.dart';
+import 'package:resposive_dash_board/widgets/income_section_body.dart';
 
 class IncomeSection extends StatelessWidget {
   const IncomeSection({super.key});
@@ -12,18 +13,8 @@ class IncomeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomBackGroundContainer(
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
-            IncomeSectionHeader(),
-            Row(
-              children: [
-                Expanded(child: IncomeChart()),
-                Expanded(child: IncomeDetails())
-              ],
-            ),
-          ],
-        ),
+      child: Column(
+        children: [IncomeSectionHeader(), IncomeSectionBody()],
       ),
     );
   }

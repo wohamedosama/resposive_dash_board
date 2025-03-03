@@ -52,6 +52,7 @@ class MyCards extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 26),
+            const CustomDotIndicator(isActive: false),
           ],
         ),
       ),
