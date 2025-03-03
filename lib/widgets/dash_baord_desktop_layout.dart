@@ -10,8 +10,8 @@ import 'package:resposive_dash_board/widgets/my_cards_page_view.dart';
 import 'package:resposive_dash_board/widgets/my_cards_section.dart';
 import 'package:resposive_dash_board/widgets/transaction_history.dart';
 
-class DashBaordDesktopLayout extends StatelessWidget {
-  const DashBaordDesktopLayout({super.key});
+class DashBoardDesktopLayout extends StatelessWidget {
+  const DashBoardDesktopLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,8 +26,8 @@ class DashBaordDesktopLayout extends StatelessWidget {
           children: [
             SizedBox(height: 40),
             MyCardsAndTransactionHistorySection(),
-            SizedBox(height: 24),
             Expanded(child: IncomeSection()),
+            SizedBox(height: 24),
           ],
         ))
       ],
