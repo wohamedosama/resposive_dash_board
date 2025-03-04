@@ -26,23 +26,31 @@ class ActieExpensessItem extends StatelessWidget {
         children: [
           AllExpensessItemHeader(
             image: itemModel.iamge,
-            imageBackgroundColor:
-                Colors.white.withValues(alpha: 0.1000000049011612),
+            imageBackground: Colors.white.withValues(alpha: 0.1000000049011612),
             imageColor: Colors.white,
           ),
           const SizedBox(height: 34),
-          Text(itemModel.title,
-              style: AppStyles.styleMedium16(context)
-                  .copyWith(color: Colors.white)),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(itemModel.title,
+                style: AppStyles.styleMedium16(context)
+                    .copyWith(color: Colors.white)),
+          ),
           const SizedBox(height: 8),
-          Text(itemModel.date,
-              style: AppStyles.styleRegular14(context)
-                  .copyWith(color: const Color(0XFFFAFAFA)),
-              overflow: TextOverflow.ellipsis),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(itemModel.date,
+                style: AppStyles.styleRegular14(context)
+                    .copyWith(color: const Color(0XFFFAFAFA)),
+                overflow: TextOverflow.ellipsis),
+          ),
           const SizedBox(height: 16),
-          Text(itemModel.price,
-              style: AppStyles.styleSemiBold24(context)
-                  .copyWith(color: Colors.white)),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(itemModel.price,
+                style: AppStyles.styleSemiBold24(context)
+                    .copyWith(color: Colors.white)),
+          ),
         ],
       ),
     );

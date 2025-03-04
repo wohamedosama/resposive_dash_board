@@ -28,14 +28,21 @@ class InActieExpensessItem extends StatelessWidget {
           AllExpensessItemHeader(image: itemModel.iamge),
           const SizedBox(height: 34),
           FittedBox(
+              fit: BoxFit.scaleDown,
               child: Text(itemModel.title,
                   style: AppStyles.styleMedium16(context))),
           const SizedBox(height: 8),
-          Text(itemModel.date,
-              style: AppStyles.styleRegular14(context),
-              overflow: TextOverflow.ellipsis),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(itemModel.date,
+                style: AppStyles.styleRegular14(context),
+                overflow: TextOverflow.ellipsis),
+          ),
           const SizedBox(height: 16),
-          Text(itemModel.price, style: AppStyles.styleSemiBold24(context)),
+          FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(itemModel.price,
+                  style: AppStyles.styleSemiBold24(context))),
         ],
       ),
     );

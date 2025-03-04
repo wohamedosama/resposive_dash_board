@@ -34,35 +34,48 @@ class _AllExpensessItemsListViewState extends State<AllExpensessItemsListView> {
   @override
   Widget build(BuildContext context) {
     return Row(
-        children: items.asMap().entries.map(
-      (item) {
-        int index = item.key;
-        var items = item.value;
-        if (index == 1) {
-          return Expanded(
-            child: GestureDetector(
-              onTap: () => updateIndex(index),
-              child: Padding(
-                // ignore: prefer_const_constructors
-                padding: EdgeInsets.symmetric(horizontal: 12),
-                child: AllExpensessItem(
-                  itemModel: items,
-                  isSelected: selectedIndex == index,
-                ),
-              ),
+      children: [
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              updateIndex(0);
+            },
+            child: AllExpensessItem(
+              isSelected: selectedIndex == 0,
+              itemModel: items[0],
             ),
-          );
-        } else {
-          return Expanded(
-            child: GestureDetector(
-              onTap: () => updateIndex(index),
-              child: AllExpensessItem(
-                  itemModel: items, isSelected: selectedIndex == index),
+          ),
+        ),
+        const SizedBox(
+          width: 8,
+        ),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              updateIndex(1);
+            },
+            child: AllExpensessItem(
+              isSelected: selectedIndex == 1,
+              itemModel: items[1],
             ),
-          );
-        }
-      },
-    ).toList());
+          ),
+        ),
+        const SizedBox(
+          width: 8,
+        ),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              updateIndex(2);
+            },
+            child: AllExpensessItem(
+              isSelected: selectedIndex == 2,
+              itemModel: items[2],
+            ),
+          ),
+        )
+      ],
+    );
   }
 
   void updateIndex(int index) {
