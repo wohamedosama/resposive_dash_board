@@ -23,7 +23,7 @@ class _IncomeChartState extends State<DetailedIncomeChart> {
                 pieTouchResponse?.touchedSection?.touchedSectionIndex ?? -1;
             setState(() {});
           }),
-      sections: detailedSectionList(activeIndex),
+      sections: detailedSectionList(activeIndex, context),
       sectionsSpace: 0,
       centerSpaceColor: Colors.white,
     );

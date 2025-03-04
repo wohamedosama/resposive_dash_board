@@ -15,8 +15,8 @@ class ItemDetails extends StatelessWidget {
         decoration:
             ShapeDecoration(shape: const OvalBorder(), color: model.color),
       ),
-      title: Text(model.title, style: AppStyles.styleRegular16),
-      trailing: Text(model.value, style: AppStyles.styleMedium16),
+      title: Text(model.title, style: AppStyles.styleRegular16(context)),
+      trailing: Text(model.value, style: AppStyles.styleMedium16(context)),
     );
   }
 }
